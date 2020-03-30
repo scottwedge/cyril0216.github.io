@@ -1,0 +1,1379 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>1.Gitflow · 黑马头条</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="zhangzz">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="GitflowProcess.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.itcast.cn/" target="_blank" class="custom-link">传智播客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    课程简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../C01-Introduction/">
+            
+                <a href="../C01-Introduction/">
+            
+                    
+                    项目基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../C01-Introduction/AboutProject.html">
+            
+                <a href="../C01-Introduction/AboutProject.html">
+            
+                    
+                    1.项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../C01-Introduction/AboutToutiaoWebVM.html">
+            
+                <a href="../C01-Introduction/AboutToutiaoWebVM.html">
+            
+                    
+                    2.项目开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../C01-Introduction/PycharmRemoteDevelop.html">
+            
+                <a href="../C01-Introduction/PycharmRemoteDevelop.html">
+            
+                    
+                    3.远程调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../C02-Database/">
+            
+                <a href="../C02-Database/">
+            
+                    
+                    数据库设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../C02-Database/TableDesign.html">
+            
+                <a href="../C02-Database/TableDesign.html">
+            
+                    
+                    1.表设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../C02-Database/ColumnDesign.html">
+            
+                <a href="../C02-Database/ColumnDesign.html">
+            
+                    
+                    2.字段设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../C02-Database/TypeDesign.html">
+            
+                <a href="../C02-Database/TypeDesign.html">
+            
+                    
+                    2.1.类型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../C02-Database/ConstrictDesign.html">
+            
+                <a href="../C02-Database/ConstrictDesign.html">
+            
+                    
+                    2.2.约束设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../C02-Database/IndexDesign.html">
+            
+                <a href="../C02-Database/IndexDesign.html">
+            
+                    
+                    2.3.索引设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../C02-Database/DeNormalizedDesign.html">
+            
+                <a href="../C02-Database/DeNormalizedDesign.html">
+            
+                    
+                    2.4.反范式设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../C02-Database/DatabaseDesign.html">
+            
+                <a href="../C02-Database/DatabaseDesign.html">
+            
+                    
+                    3.其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Git进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="Gitflow.html">
+            
+                <a href="Gitflow.html">
+            
+                    
+                    1.Gitflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="GitflowProcess.html">
+            
+                <a href="GitflowProcess.html">
+            
+                    
+                    2.流程演示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="AboutGit.html">
+            
+                <a href="AboutGit.html">
+            
+                    
+                    3.冲突解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../C04-Project/">
+            
+                <a href="../C04-Project/">
+            
+                    
+                    项目实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../C04-Project/CreateProject.html">
+            
+                <a href="../C04-Project/CreateProject.html">
+            
+                    
+                    1.项目搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../C04-Project/ProjectInitial.html">
+            
+                <a href="../C04-Project/ProjectInitial.html">
+            
+                    
+                    1.1.项目初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../C04-Project/DatabaseSetting.html">
+            
+                <a href="../C04-Project/DatabaseSetting.html">
+            
+                    
+                    1.2.配置数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../C04-Project/ModuleSetting.html">
+            
+                <a href="../C04-Project/ModuleSetting.html">
+            
+                    
+                    1.3.配置模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../C04-Project/UserModule.html">
+            
+                <a href="../C04-Project/UserModule.html">
+            
+                    
+                    2.用户模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../C04-Project/GetCode.html">
+            
+                <a href="../C04-Project/GetCode.html">
+            
+                    
+                    2.1.获取验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../C04-Project/RegsiterLogin.html">
+            
+                <a href="../C04-Project/RegsiterLogin.html">
+            
+                    
+                    2.2.注册登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../C04-Project/GetUserInfo.html">
+            
+                <a href="../C04-Project/GetUserInfo.html">
+            
+                    
+                    2.3.获取用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../C04-Project/WebDemo.html">
+            
+                <a href="../C04-Project/WebDemo.html">
+            
+                    
+                    2.4.查看前端交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../C04-Project/HomeModule.html">
+            
+                <a href="../C04-Project/HomeModule.html">
+            
+                    
+                    3.头条模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../C04-Project/GetUserChannel.html">
+            
+                <a href="../C04-Project/GetUserChannel.html">
+            
+                    
+                    3.1.获取用户频道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../C04-Project/GetAllChannel.html">
+            
+                <a href="../C04-Project/GetAllChannel.html">
+            
+                    
+                    3.2.获取所有频道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../C04-Project/UpdateUserChannel.html">
+            
+                <a href="../C04-Project/UpdateUserChannel.html">
+            
+                    
+                    3.3.修改用户频道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../C04-Project/HomeList.html">
+            
+                <a href="../C04-Project/HomeList.html">
+            
+                    
+                    3.4.首页文章列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../C04-Project/ArticleModule.html">
+            
+                <a href="../C04-Project/ArticleModule.html">
+            
+                    
+                    4.文章模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../C04-Project/ArticleDetail.html">
+            
+                <a href="../C04-Project/ArticleDetail.html">
+            
+                    
+                    4.1.获取文章详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../C04-Project/FollowUser.html">
+            
+                <a href="../C04-Project/FollowUser.html">
+            
+                    
+                    4.2.关注用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.3" data-path="../C04-Project/UnFollowUser.html">
+            
+                <a href="../C04-Project/UnFollowUser.html">
+            
+                    
+                    4.3.取消关注用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.4" data-path="../C04-Project/FollowList.html">
+            
+                <a href="../C04-Project/FollowList.html">
+            
+                    
+                    4.4.用户关注列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.5" data-path="../C04-Project/PostComment.html">
+            
+                <a href="../C04-Project/PostComment.html">
+            
+                    
+                    4.5.发布评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.6" data-path="../C04-Project/CommentList.html">
+            
+                <a href="../C04-Project/CommentList.html">
+            
+                    
+                    4.6.评论列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.7" data-path="../C04-Project/ReplyComment.html">
+            
+                <a href="../C04-Project/ReplyComment.html">
+            
+                    
+                    4.7.回复评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.8" data-path="../C04-Project/ReplyList.html">
+            
+                <a href="../C04-Project/ReplyList.html">
+            
+                    
+                    4.8.回复列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../C05-Distribute/">
+            
+                <a href="../C05-Distribute/">
+            
+                    
+                    分布式设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../C05-Distribute/MysqlDistribute.html">
+            
+                <a href="../C05-Distribute/MysqlDistribute.html">
+            
+                    
+                    1.Mysql分布式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../C05-Distribute/Replication.html">
+            
+                <a href="../C05-Distribute/Replication.html">
+            
+                    
+                    1.1.复制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1" data-path="../C05-Distribute/Introduce.html">
+            
+                <a href="../C05-Distribute/Introduce.html">
+            
+                    
+                    1.1.1.复制介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.2" data-path="../C05-Distribute/ReadWrite.html">
+            
+                <a href="../C05-Distribute/ReadWrite.html">
+            
+                    
+                    1.1.2.读写分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../C05-Distribute/Shareding.html">
+            
+                <a href="../C05-Distribute/Shareding.html">
+            
+                    
+                    1.2.分片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.2.1" data-path="../C05-Distribute/SharedIntro.html">
+            
+                <a href="../C05-Distribute/SharedIntro.html">
+            
+                    
+                    1.2.1.分片介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.2" data-path="../C05-Distribute/VerticalPartition.html">
+            
+                <a href="../C05-Distribute/VerticalPartition.html">
+            
+                    
+                    1.2.2.垂直拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.3" data-path="../C05-Distribute/HorizontalPartition.html">
+            
+                <a href="../C05-Distribute/HorizontalPartition.html">
+            
+                    
+                    1.2.3.水平拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.4" data-path="../C05-Distribute/DistributeQuestion.html">
+            
+                <a href="../C05-Distribute/DistributeQuestion.html">
+            
+                    
+                    1.2.4.分布式问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../C05-Distribute/RedisSimple.html">
+            
+                <a href="../C05-Distribute/RedisSimple.html">
+            
+                    
+                    2.Redis单机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../C05-Distribute/Review.html">
+            
+                <a href="../C05-Distribute/Review.html">
+            
+                    
+                    2.1.语法回顾
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../C05-Distribute/Transaction.html">
+            
+                <a href="../C05-Distribute/Transaction.html">
+            
+                    
+                    2.2.事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../C05-Distribute/Watch.html">
+            
+                <a href="../C05-Distribute/Watch.html">
+            
+                    
+                    2.3.乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="../C05-Distribute/Setex.html">
+            
+                <a href="../C05-Distribute/Setex.html">
+            
+                    
+                    2.4.悲观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5" data-path="../C05-Distribute/Pipeline.html">
+            
+                <a href="../C05-Distribute/Pipeline.html">
+            
+                    
+                    2.5.非事务型管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../C05-Distribute/RedisDistribute.html">
+            
+                <a href="../C05-Distribute/RedisDistribute.html">
+            
+                    
+                    3.Redis分布式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../C05-Distribute/RedisReplication.html">
+            
+                <a href="../C05-Distribute/RedisReplication.html">
+            
+                    
+                    3.1.数据库主从
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../C05-Distribute/Sentinel.html">
+            
+                <a href="../C05-Distribute/Sentinel.html">
+            
+                    
+                    3.2.哨兵模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../C05-Distribute/Cluster.html">
+            
+                <a href="../C05-Distribute/Cluster.html">
+            
+                    
+                    3.3.集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../C06-Cache/">
+            
+                <a href="../C06-Cache/">
+            
+                    
+                    缓存设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../C06-Cache/CacheArchitecture.html">
+            
+                <a href="../C06-Cache/CacheArchitecture.html">
+            
+                    
+                    1.缓存介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../C06-Cache/CacheData.html">
+            
+                <a href="../C06-Cache/CacheData.html">
+            
+                    
+                    2.项目缓存设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../C06-Cache/CacheTTLAndEviction.html">
+            
+                <a href="../C06-Cache/CacheTTLAndEviction.html">
+            
+                    
+                    3.过期和淘汰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../C06-Cache/CacheProblems.html">
+            
+                <a href="../C06-Cache/CacheProblems.html">
+            
+                    
+                    4.缓存问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../C06-Cache/CachePatterns.html">
+            
+                <a href="../C06-Cache/CachePatterns.html">
+            
+                    
+                    5.缓存模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../C06-Cache/ProjectCacheImplement.html">
+            
+                <a href="../C06-Cache/ProjectCacheImplement.html">
+            
+                    
+                    6.缓存层实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../C06-Cache/README2.html">
+            
+                <a href="../C06-Cache/README2.html">
+            
+                    
+                    Redis持久化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../C06-Cache/DataPersistence.html">
+            
+                <a href="../C06-Cache/DataPersistence.html">
+            
+                    
+                    1.持久化方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../C06-Cache/ProjectPersistence.html">
+            
+                <a href="../C06-Cache/ProjectPersistence.html">
+            
+                    
+                    2.项目持久化设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../C06-Cache/PersistenceImplement.html">
+            
+                <a href="../C06-Cache/PersistenceImplement.html">
+            
+                    
+                    3.持久化类实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.Gitflow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#gitflow"><b></b>Gitflow</a></li></ul></div><a href="#gitflow" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="gitflow"><a name="gitflow" class="anchor-navigation-ex-anchor" href="#gitflow"><i class="fa fa-link" aria-hidden="true"></i></a>Gitflow</h1>
+<p><code>Gitflow</code>&#x5DE5;&#x4F5C;&#x6D41;&#x901A;&#x8FC7;&#x4E3A;&#x529F;&#x80FD;&#x5F00;&#x53D1;&#x3001;&#x53D1;&#x5E03;&#x51C6;&#x5907;&#x548C;&#x7EF4;&#x62A4;&#x5206;&#x914D;&#x72EC;&#x7ACB;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x8BA9;&#x53D1;&#x5E03;&#x8FED;&#x4EE3;&#x8FC7;&#x7A0B;&#x66F4;&#x6D41;&#x7545;&#x3002;&#x4E25;&#x683C;&#x7684;&#x5206;&#x652F;&#x6A21;&#x578B;&#x4E5F;&#x4E3A;&#x5927;&#x578B;&#x9879;&#x76EE;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x975E;&#x5E38;&#x5FC5;&#x8981;&#x7684;&#x7ED3;&#x6784;&#x3002;</p>
+<p><img src="../images/git-workflows-gitflow.png" alt="Git Workflows: Gitflow Cycle"></p>
+<p>&#x8FD9;&#x8282;&#x4ECB;&#x7ECD;&#x7684;<code>Gitflow</code>&#x5DE5;&#x4F5C;&#x6D41;&#x501F;&#x9274;&#x81EA;&#x5728;nvie&#x7684;<em>Vincent Driessen</em>&#x3002;</p>
+<p><code>Gitflow</code>&#x5DE5;&#x4F5C;&#x6D41;&#x6CA1;&#x6709;&#x7528;&#x8D85;&#x51FA;Git&#x7684;&#x6982;&#x5FF5;&#x548C;&#x547D;&#x4EE4;&#xFF0C;&#x800C;&#x662F;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x652F;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x660E;&#x786E;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x5E76;&#x5B9A;&#x4E49;&#x5206;&#x652F;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x548C;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002; &#x9664;&#x4E86;&#x4F7F;&#x7528;&#x529F;&#x80FD;&#x5206;&#x652F;&#xFF0C;&#x5728;&#x505A;&#x51C6;&#x5907;&#x3001;&#x7EF4;&#x62A4;&#x548C;&#x8BB0;&#x5F55;&#x53D1;&#x5E03;&#x65F6;&#xFF0C;&#x4E5F;&#x5B9A;&#x4E49;&#x4E86;&#x5404;&#x81EA;&#x7684;&#x5206;&#x652F;&#x3002; </p>
+<p><code>Gitflow</code>&#x5DE5;&#x4F5C;&#x6D41;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x56F4;&#x7ED5;&#x9879;&#x76EE;&#x53D1;&#x5E03;&#x7684;&#x4E25;&#x683C;&#x5206;&#x652F;&#x6A21;&#x578B;, &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5065;&#x58EE;&#x7684;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x5927;&#x578B;&#x9879;&#x76EE;&#x7684;&#x6846;&#x67B6;&#x3002;</p>
+<h4 id="1&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;"><a name="1&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#1&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;</h4>
+<p><code>Gitflow</code>&#x5DE5;&#x4F5C;&#x6D41;&#x4ECD;&#x7136;&#x7528;&#x4E2D;&#x592E;&#x4ED3;&#x5E93;&#x4F5C;&#x4E3A;&#x6240;&#x6709;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x4EA4;&#x4E92;&#x4E2D;&#x5FC3;&#x3002;&#x548C;&#x5176;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x4E00;&#x6837;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x672C;&#x5730;&#x5DE5;&#x4F5C;&#x5E76;<code>push</code>&#x5206;&#x652F;&#x5230;&#x8981;&#x4E2D;&#x592E;&#x4ED3;&#x5E93;&#x4E2D;&#x3002;</p>
+<h4 id="2&#x5386;&#x53F2;&#x5206;&#x652F;"><a name="2&#x5386;&#x53F2;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#2&#x5386;&#x53F2;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x5386;&#x53F2;&#x5206;&#x652F;</h4>
+<p>&#x76F8;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x4EC5;&#x6709;&#x7684;&#x4E00;&#x4E2A;<code>master</code>&#x5206;&#x652F;&#xFF0C;<code>Gitflow</code>&#x5DE5;&#x4F5C;&#x6D41;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x5206;&#x652F;&#x6765;&#x8BB0;&#x5F55;&#x9879;&#x76EE;&#x7684;&#x5386;&#x53F2;&#x3002;<code>master</code>&#x5206;&#x652F;&#x5B58;&#x50A8;&#x4E86;&#x6B63;&#x5F0F;&#x53D1;&#x5E03;&#x7684;&#x5386;&#x53F2;&#xFF0C;&#x800C;<code>develop</code>&#x5206;&#x652F;&#x4F5C;&#x4E3A;&#x529F;&#x80FD;&#x7684;&#x96C6;&#x6210;&#x5206;&#x652F;&#x3002; &#x8FD9;&#x6837;&#x4E5F;&#x65B9;&#x4FBF;<code>master</code>&#x5206;&#x652F;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x63D0;&#x4EA4;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x53F7;&#x3002;</p>
+<p><img src="../images/git-workflow-release-cycle-1historical.png" alt="img"></p>
+<p>&#x5269;&#x4E0B;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x95EE;&#x9898;&#x56F4;&#x7ED5;&#x7740;&#x8FD9;2&#x4E2A;&#x5206;&#x652F;&#x7684;&#x533A;&#x522B;&#x5C55;&#x5F00;&#x3002;</p>
+<h4 id="3&#x529F;&#x80FD;&#x5206;&#x652F;"><a name="3&#x529F;&#x80FD;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#3&#x529F;&#x80FD;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x529F;&#x80FD;&#x5206;&#x652F;</h4>
+<p>&#x6BCF;&#x4E2A;&#x65B0;&#x529F;&#x80FD;&#x4F4D;&#x4E8E;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;<code>push</code>&#x5230;&#x4E2D;&#x592E;&#x4ED3;&#x5E93;&#x4EE5;&#x5907;&#x4EFD;&#x548C;&#x534F;&#x4F5C;&#x3002; &#x4F46;&#x529F;&#x80FD;&#x5206;&#x652F;&#x4E0D;&#x662F;&#x4ECE;<code>master</code>&#x5206;&#x652F;&#x4E0A;&#x62C9;&#x51FA;&#x65B0;&#x5206;&#x652F;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;<code>develop</code>&#x5206;&#x652F;&#x4F5C;&#x4E3A;&#x7236;&#x5206;&#x652F;&#x3002;&#x5F53;&#x65B0;&#x529F;&#x80FD;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x5408;&#x5E76;&#x56DE;<code>develop</code>&#x5206;&#x652F;&#x3002; &#x65B0;&#x529F;&#x80FD;&#x63D0;&#x4EA4;&#x5E94;&#x8BE5;&#x4ECE;&#x4E0D;&#x76F4;&#x63A5;&#x4E0E;<code>master</code>&#x5206;&#x652F;&#x4EA4;&#x4E92;&#x3002;</p>
+<p><img src="../images/git-workflow-release-cycle-2feature.png" alt="img"></p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4ECE;&#x5404;&#x79CD;&#x542B;&#x4E49;&#x548C;&#x76EE;&#x7684;&#x4E0A;&#x6765;&#x770B;&#xFF0C;&#x529F;&#x80FD;&#x5206;&#x652F;&#x52A0;&#x4E0A;<code>develop</code>&#x5206;&#x652F;&#x5C31;&#x662F;&#x529F;&#x80FD;&#x5206;&#x652F;&#x5DE5;&#x4F5C;&#x6D41;&#x7684;&#x7528;&#x6CD5;&#x3002;&#x4F46;<code>Gitflow</code>&#x5DE5;&#x4F5C;&#x6D41;&#x6CA1;&#x6709;&#x5728;&#x8FD9;&#x91CC;&#x6B62;&#x6B65;&#x3002;</p>
+<h4 id="4&#x53D1;&#x5E03;&#x5206;&#x652F;"><a name="4&#x53D1;&#x5E03;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#4&#x53D1;&#x5E03;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>4.&#x53D1;&#x5E03;&#x5206;&#x652F;</h4>
+<p><img src="../images/git-workflow-release-cycle-3release.png" alt="img"></p>
+<p>&#x4E00;&#x65E6;<code>develop</code>&#x5206;&#x652F;&#x4E0A;&#x6709;&#x4E86;&#x505A;&#x4E00;&#x6B21;&#x53D1;&#x5E03;&#xFF08;&#x6216;&#x8005;&#x8BF4;&#x5FEB;&#x5230;&#x4E86;&#x65E2;&#x5B9A;&#x7684;&#x53D1;&#x5E03;&#x65E5;&#xFF09;&#x7684;&#x8DB3;&#x591F;&#x529F;&#x80FD;&#xFF0C;&#x5C31;&#x4ECE;<code>develop</code>&#x5206;&#x652F;&#x4E0A;<code>checkout</code>&#x4E00;&#x4E2A;&#x53D1;&#x5E03;&#x5206;&#x652F;&#x3002; &#x65B0;&#x5EFA;&#x7684;&#x5206;&#x652F;&#x7528;&#x4E8E;&#x5F00;&#x59CB;&#x53D1;&#x5E03;&#x5FAA;&#x73AF;&#xFF0C;&#x6240;&#x4EE5;&#x4ECE;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x5F00;&#x59CB;&#x4E4B;&#x540E;&#x65B0;&#x7684;&#x529F;&#x80FD;&#x4E0D;&#x80FD;&#x518D;&#x52A0;&#x5230;&#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x2014;&#x2014; &#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x53EA;&#x5E94;&#x8BE5;&#x505A;<code>Bug</code>&#x4FEE;&#x590D;&#x3001;&#x6587;&#x6863;&#x751F;&#x6210;&#x548C;&#x5176;&#x5B83;&#x9762;&#x5411;&#x53D1;&#x5E03;&#x4EFB;&#x52A1;&#x3002; &#x4E00;&#x65E6;&#x5BF9;&#x5916;&#x53D1;&#x5E03;&#x7684;&#x5DE5;&#x4F5C;&#x90FD;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x53D1;&#x5E03;&#x5206;&#x652F;&#x5408;&#x5E76;&#x5230;<code>master</code>&#x5206;&#x652F;&#x5E76;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x53F7;&#x6253;&#x597D;<code>Tag</code>&#x3002; &#x53E6;&#x5916;&#xFF0C;&#x8FD9;&#x4E9B;&#x4ECE;&#x65B0;&#x5EFA;&#x53D1;&#x5E03;&#x5206;&#x652F;&#x4EE5;&#x6765;&#x7684;&#x505A;&#x7684;&#x4FEE;&#x6539;&#x8981;&#x5408;&#x5E76;&#x56DE;<code>develop</code>&#x5206;&#x652F;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x53D1;&#x5E03;&#x51C6;&#x5907;&#x7684;&#x4E13;&#x95E8;&#x5206;&#x652F;&#xFF0C;&#x4F7F;&#x5F97;&#x4E00;&#x4E2A;&#x56E2;&#x961F;&#x53EF;&#x4EE5;&#x5728;&#x5B8C;&#x5584;&#x5F53;&#x524D;&#x7684;&#x53D1;&#x5E03;&#x7248;&#x672C;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x56E2;&#x961F;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x5F00;&#x53D1;&#x4E0B;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x529F;&#x80FD;&#x3002; &#x8FD9;&#x4E5F;&#x6253;&#x9020;&#x5B9A;&#x4E49;&#x826F;&#x597D;&#x7684;&#x5F00;&#x53D1;&#x9636;&#x6BB5;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x8F7B;&#x677E;&#x5730;&#x8BF4;&#xFF0C;&#x300E;&#x8FD9;&#x5468;&#x6211;&#x4EEC;&#x8981;&#x505A;&#x51C6;&#x5907;&#x53D1;&#x5E03;&#x7248;&#x672C;4.0&#x300F;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x4ED3;&#x5E93;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x4E2D;&#x53EF;&#x4EE5;&#x5B9E;&#x9645;&#x770B;&#x5230;&#xFF09;&#x3002;</p>
+<p>&#x5E38;&#x7528;&#x7684;&#x5206;&#x652F;&#x7EA6;&#x5B9A;&#xFF1A;</p>
+<pre><code>&#x7528;&#x4E8E;&#x65B0;&#x5EFA;&#x53D1;&#x5E03;&#x5206;&#x652F;&#x7684;&#x5206;&#x652F;: develop
+&#x7528;&#x4E8E;&#x5408;&#x5E76;&#x7684;&#x5206;&#x652F;: master
+&#x5206;&#x652F;&#x547D;&#x540D;: release-* &#x6216; release/*
+</code></pre><h4 id="5&#x7EF4;&#x62A4;&#x5206;&#x652F;"><a name="5&#x7EF4;&#x62A4;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#5&#x7EF4;&#x62A4;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>5.&#x7EF4;&#x62A4;&#x5206;&#x652F;</h4>
+<p><img src="../images/git-workflow-release-cycle-4maintenance.png" alt="img"></p>
+<p>&#x7EF4;&#x62A4;&#x5206;&#x652F;&#x6216;&#x8BF4;&#x662F;&#x70ED;&#x4FEE;&#x590D;&#xFF08;<code>hotfix</code>&#xFF09;&#x5206;&#x652F;&#x7528;&#x4E8E;&#x7ED9;&#x4EA7;&#x54C1;&#x53D1;&#x5E03;&#x7248;&#x672C;&#xFF08;<code>production releases</code>&#xFF09;&#x5FEB;&#x901F;&#x751F;&#x6210;&#x8865;&#x4E01;&#xFF0C;&#x8FD9;&#x662F;&#x552F;&#x4E00;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4ECE;<code>master</code>&#x5206;&#x652F;<code>fork</code>&#x51FA;&#x6765;&#x7684;&#x5206;&#x652F;&#x3002; &#x4FEE;&#x590D;&#x5B8C;&#x6210;&#xFF0C;&#x4FEE;&#x6539;&#x5E94;&#x8BE5;&#x9A6C;&#x4E0A;&#x5408;&#x5E76;&#x56DE;<code>master</code>&#x5206;&#x652F;&#x548C;<code>develop</code>&#x5206;&#x652F;&#xFF08;&#x5F53;&#x524D;&#x7684;&#x53D1;&#x5E03;&#x5206;&#x652F;&#xFF09;&#xFF0C;<code>master</code>&#x5206;&#x652F;&#x5E94;&#x8BE5;&#x7528;&#x65B0;&#x7684;&#x7248;&#x672C;&#x53F7;&#x6253;&#x597D;<code>Tag</code>&#x3002;</p>
+<p>&#x4E3A;<code>Bug</code>&#x4FEE;&#x590D;&#x4F7F;&#x7528;&#x4E13;&#x95E8;&#x5206;&#x652F;&#xFF0C;&#x8BA9;&#x56E2;&#x961F;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x6389;&#x95EE;&#x9898;&#x800C;&#x4E0D;&#x7528;&#x6253;&#x65AD;&#x5176;&#x5B83;&#x5DE5;&#x4F5C;&#x6216;&#x662F;&#x7B49;&#x5F85;&#x4E0B;&#x4E00;&#x4E2A;&#x53D1;&#x5E03;&#x5FAA;&#x73AF;&#x3002; &#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x7EF4;&#x62A4;&#x5206;&#x652F;&#x60F3;&#x6210;&#x662F;&#x4E00;&#x4E2A;&#x76F4;&#x63A5;&#x5728;<code>master</code>&#x5206;&#x652F;&#x4E0A;&#x5904;&#x7406;&#x7684;&#x4E34;&#x65F6;&#x53D1;&#x5E03;&#x3002;</p>
+<h4 id="6&#x603B;&#x7ED3;"><a name="6&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#6&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>6.&#x603B;&#x7ED3;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x5206;&#x652F;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>master</td>
+<td>&#x4E3B;&#x5206;&#x652F;, &#x4FDD;&#x7559;&#x53D1;&#x5E03;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>dev</td>
+<td>&#x5F00;&#x53D1;&#x5206;&#x652F;, &#x4FDD;&#x7559;&#x6240;&#x6709;&#x5386;&#x53F2;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>f_xxx</td>
+<td>feature &#x529F;&#x80FD;&#x7279;&#x6027;&#x5206;&#x652F;, &#x5B9E;&#x73B0;&#x529F;&#x80FD;&#x5F00;&#x53D1;</td>
+</tr>
+<tr>
+<td>b_xxx</td>
+<td>bug&#x4FEE;&#x590D;&#x5206;&#x652F;, &#x8D1F;&#x8D23;&#x5904;&#x7406;&#x7EBF;&#x4E0A;bug</td>
+</tr>
+<tr>
+<td>r_xxx</td>
+<td>release &#x53D1;&#x5E03;&#x5206;&#x652F;, &#x8D1F;&#x8D23;&#x4EE3;&#x7801;&#x6D4B;&#x8BD5;,bug&#x4FEE;&#x590D;,&#x5206;&#x5305;&#x53D1;&#x5E03;&#x7B49;</td>
+</tr>
+</tbody>
+</table>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Git进阶">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="GitflowProcess.html" class="navigation navigation-next " aria-label="Next page: 2.流程演示">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.Gitflow","level":"1.4.1","depth":2,"next":{"title":"2.流程演示","level":"1.4.2","depth":2,"path":"C03-Gitflow/GitflowProcess.md","ref":"C03-Gitflow/GitflowProcess.md","articles":[]},"previous":{"title":"Git进阶","level":"1.4","depth":1,"path":"C03-Gitflow/README.md","ref":"C03-Gitflow/README.md","articles":[{"title":"1.Gitflow","level":"1.4.1","depth":2,"path":"C03-Gitflow/Gitflow.md","ref":"C03-Gitflow/Gitflow.md","articles":[]},{"title":"2.流程演示","level":"1.4.2","depth":2,"path":"C03-Gitflow/GitflowProcess.md","ref":"C03-Gitflow/GitflowProcess.md","articles":[]},{"title":"3.冲突解决","level":"1.4.3","depth":2,"path":"C03-Gitflow/AboutGit.md","ref":"C03-Gitflow/AboutGit.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","-sharing","splitter","hide-element","code","popup","emphasize","auto-scroll-table","highlight","fontsettings","anchor-navigation-ex","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"emphasize":{},"splitter":{},"search":{},"auto-scroll-table":{},"popup":{},"lunr":{"maxIndexSize":1000000},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link","#book-search-input"]},"fontsettings":{"family":"sans","size":2,"theme":"white"},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true},"expandable-chapters-small":{},"theme-default":{"showLevel":false,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}}},"github":"","theme":"default","githubHost":"","author":"zhangzz","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"黑马头条","language":"zh-hans","links":{"sidebar":{"传智播客":"http://www.itcast.cn/"}},"gitbook":"*","description":"传智播客-python学科-黑马头条"},"file":{"path":"C03-Gitflow/Gitflow.md","mtime":"2020-02-18T15:41:04.249Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2020-03-01T18:07:17.481Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

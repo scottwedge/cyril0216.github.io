@@ -1,0 +1,1384 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>1.2.配置数据库 · 黑马头条</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="zhangzz">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ModuleSetting.html" />
+    
+    
+    <link rel="prev" href="ProjectInitial.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.itcast.cn/" target="_blank" class="custom-link">传智播客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    课程简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../C01-Introduction/">
+            
+                <a href="../C01-Introduction/">
+            
+                    
+                    项目基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../C01-Introduction/AboutProject.html">
+            
+                <a href="../C01-Introduction/AboutProject.html">
+            
+                    
+                    1.项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../C01-Introduction/AboutToutiaoWebVM.html">
+            
+                <a href="../C01-Introduction/AboutToutiaoWebVM.html">
+            
+                    
+                    2.项目开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../C01-Introduction/PycharmRemoteDevelop.html">
+            
+                <a href="../C01-Introduction/PycharmRemoteDevelop.html">
+            
+                    
+                    3.远程调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../C02-Database/">
+            
+                <a href="../C02-Database/">
+            
+                    
+                    数据库设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../C02-Database/TableDesign.html">
+            
+                <a href="../C02-Database/TableDesign.html">
+            
+                    
+                    1.表设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../C02-Database/ColumnDesign.html">
+            
+                <a href="../C02-Database/ColumnDesign.html">
+            
+                    
+                    2.字段设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../C02-Database/TypeDesign.html">
+            
+                <a href="../C02-Database/TypeDesign.html">
+            
+                    
+                    2.1.类型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../C02-Database/ConstrictDesign.html">
+            
+                <a href="../C02-Database/ConstrictDesign.html">
+            
+                    
+                    2.2.约束设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../C02-Database/IndexDesign.html">
+            
+                <a href="../C02-Database/IndexDesign.html">
+            
+                    
+                    2.3.索引设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../C02-Database/DeNormalizedDesign.html">
+            
+                <a href="../C02-Database/DeNormalizedDesign.html">
+            
+                    
+                    2.4.反范式设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../C02-Database/DatabaseDesign.html">
+            
+                <a href="../C02-Database/DatabaseDesign.html">
+            
+                    
+                    3.其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../C03-Gitflow/">
+            
+                <a href="../C03-Gitflow/">
+            
+                    
+                    Git进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../C03-Gitflow/Gitflow.html">
+            
+                <a href="../C03-Gitflow/Gitflow.html">
+            
+                    
+                    1.Gitflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../C03-Gitflow/GitflowProcess.html">
+            
+                <a href="../C03-Gitflow/GitflowProcess.html">
+            
+                    
+                    2.流程演示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../C03-Gitflow/AboutGit.html">
+            
+                <a href="../C03-Gitflow/AboutGit.html">
+            
+                    
+                    3.冲突解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    项目实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="CreateProject.html">
+            
+                <a href="CreateProject.html">
+            
+                    
+                    1.项目搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="ProjectInitial.html">
+            
+                <a href="ProjectInitial.html">
+            
+                    
+                    1.1.项目初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.1.2" data-path="DatabaseSetting.html">
+            
+                <a href="DatabaseSetting.html">
+            
+                    
+                    1.2.配置数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="ModuleSetting.html">
+            
+                <a href="ModuleSetting.html">
+            
+                    
+                    1.3.配置模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="UserModule.html">
+            
+                <a href="UserModule.html">
+            
+                    
+                    2.用户模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="GetCode.html">
+            
+                <a href="GetCode.html">
+            
+                    
+                    2.1.获取验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="RegsiterLogin.html">
+            
+                <a href="RegsiterLogin.html">
+            
+                    
+                    2.2.注册登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="GetUserInfo.html">
+            
+                <a href="GetUserInfo.html">
+            
+                    
+                    2.3.获取用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="WebDemo.html">
+            
+                <a href="WebDemo.html">
+            
+                    
+                    2.4.查看前端交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="HomeModule.html">
+            
+                <a href="HomeModule.html">
+            
+                    
+                    3.头条模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="GetUserChannel.html">
+            
+                <a href="GetUserChannel.html">
+            
+                    
+                    3.1.获取用户频道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="GetAllChannel.html">
+            
+                <a href="GetAllChannel.html">
+            
+                    
+                    3.2.获取所有频道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="UpdateUserChannel.html">
+            
+                <a href="UpdateUserChannel.html">
+            
+                    
+                    3.3.修改用户频道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="HomeList.html">
+            
+                <a href="HomeList.html">
+            
+                    
+                    3.4.首页文章列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="ArticleModule.html">
+            
+                <a href="ArticleModule.html">
+            
+                    
+                    4.文章模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="ArticleDetail.html">
+            
+                <a href="ArticleDetail.html">
+            
+                    
+                    4.1.获取文章详情
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="FollowUser.html">
+            
+                <a href="FollowUser.html">
+            
+                    
+                    4.2.关注用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.3" data-path="UnFollowUser.html">
+            
+                <a href="UnFollowUser.html">
+            
+                    
+                    4.3.取消关注用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.4" data-path="FollowList.html">
+            
+                <a href="FollowList.html">
+            
+                    
+                    4.4.用户关注列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.5" data-path="PostComment.html">
+            
+                <a href="PostComment.html">
+            
+                    
+                    4.5.发布评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.6" data-path="CommentList.html">
+            
+                <a href="CommentList.html">
+            
+                    
+                    4.6.评论列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.7" data-path="ReplyComment.html">
+            
+                <a href="ReplyComment.html">
+            
+                    
+                    4.7.回复评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.8" data-path="ReplyList.html">
+            
+                <a href="ReplyList.html">
+            
+                    
+                    4.8.回复列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../C05-Distribute/">
+            
+                <a href="../C05-Distribute/">
+            
+                    
+                    分布式设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../C05-Distribute/MysqlDistribute.html">
+            
+                <a href="../C05-Distribute/MysqlDistribute.html">
+            
+                    
+                    1.Mysql分布式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../C05-Distribute/Replication.html">
+            
+                <a href="../C05-Distribute/Replication.html">
+            
+                    
+                    1.1.复制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1" data-path="../C05-Distribute/Introduce.html">
+            
+                <a href="../C05-Distribute/Introduce.html">
+            
+                    
+                    1.1.1.复制介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.2" data-path="../C05-Distribute/ReadWrite.html">
+            
+                <a href="../C05-Distribute/ReadWrite.html">
+            
+                    
+                    1.1.2.读写分离
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../C05-Distribute/Shareding.html">
+            
+                <a href="../C05-Distribute/Shareding.html">
+            
+                    
+                    1.2.分片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.2.1" data-path="../C05-Distribute/SharedIntro.html">
+            
+                <a href="../C05-Distribute/SharedIntro.html">
+            
+                    
+                    1.2.1.分片介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.2" data-path="../C05-Distribute/VerticalPartition.html">
+            
+                <a href="../C05-Distribute/VerticalPartition.html">
+            
+                    
+                    1.2.2.垂直拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.3" data-path="../C05-Distribute/HorizontalPartition.html">
+            
+                <a href="../C05-Distribute/HorizontalPartition.html">
+            
+                    
+                    1.2.3.水平拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.4" data-path="../C05-Distribute/DistributeQuestion.html">
+            
+                <a href="../C05-Distribute/DistributeQuestion.html">
+            
+                    
+                    1.2.4.分布式问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../C05-Distribute/RedisSimple.html">
+            
+                <a href="../C05-Distribute/RedisSimple.html">
+            
+                    
+                    2.Redis单机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../C05-Distribute/Review.html">
+            
+                <a href="../C05-Distribute/Review.html">
+            
+                    
+                    2.1.语法回顾
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../C05-Distribute/Transaction.html">
+            
+                <a href="../C05-Distribute/Transaction.html">
+            
+                    
+                    2.2.事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="../C05-Distribute/Watch.html">
+            
+                <a href="../C05-Distribute/Watch.html">
+            
+                    
+                    2.3.乐观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="../C05-Distribute/Setex.html">
+            
+                <a href="../C05-Distribute/Setex.html">
+            
+                    
+                    2.4.悲观锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5" data-path="../C05-Distribute/Pipeline.html">
+            
+                <a href="../C05-Distribute/Pipeline.html">
+            
+                    
+                    2.5.非事务型管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../C05-Distribute/RedisDistribute.html">
+            
+                <a href="../C05-Distribute/RedisDistribute.html">
+            
+                    
+                    3.Redis分布式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../C05-Distribute/RedisReplication.html">
+            
+                <a href="../C05-Distribute/RedisReplication.html">
+            
+                    
+                    3.1.数据库主从
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../C05-Distribute/Sentinel.html">
+            
+                <a href="../C05-Distribute/Sentinel.html">
+            
+                    
+                    3.2.哨兵模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../C05-Distribute/Cluster.html">
+            
+                <a href="../C05-Distribute/Cluster.html">
+            
+                    
+                    3.3.集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../C06-Cache/">
+            
+                <a href="../C06-Cache/">
+            
+                    
+                    缓存设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../C06-Cache/CacheArchitecture.html">
+            
+                <a href="../C06-Cache/CacheArchitecture.html">
+            
+                    
+                    1.缓存介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../C06-Cache/CacheData.html">
+            
+                <a href="../C06-Cache/CacheData.html">
+            
+                    
+                    2.项目缓存设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../C06-Cache/CacheTTLAndEviction.html">
+            
+                <a href="../C06-Cache/CacheTTLAndEviction.html">
+            
+                    
+                    3.过期和淘汰
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../C06-Cache/CacheProblems.html">
+            
+                <a href="../C06-Cache/CacheProblems.html">
+            
+                    
+                    4.缓存问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../C06-Cache/CachePatterns.html">
+            
+                <a href="../C06-Cache/CachePatterns.html">
+            
+                    
+                    5.缓存模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../C06-Cache/ProjectCacheImplement.html">
+            
+                <a href="../C06-Cache/ProjectCacheImplement.html">
+            
+                    
+                    6.缓存层实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../C06-Cache/README2.html">
+            
+                <a href="../C06-Cache/README2.html">
+            
+                    
+                    Redis持久化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../C06-Cache/DataPersistence.html">
+            
+                <a href="../C06-Cache/DataPersistence.html">
+            
+                    
+                    1.持久化方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../C06-Cache/ProjectPersistence.html">
+            
+                <a href="../C06-Cache/ProjectPersistence.html">
+            
+                    
+                    2.项目持久化设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../C06-Cache/PersistenceImplement.html">
+            
+                <a href="../C06-Cache/PersistenceImplement.html">
+            
+                    
+                    3.持久化类实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.2.配置数据库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;"><b></b>&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;</a></li></ul></div><a href="#&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;"><a name="&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;</h1>
+<ul>
+<li>&#x5728; <code>config</code>&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E; <code>MYSQL</code> &#x548C; <code>REDIS</code> &#x7684;&#x76F8;&#x5173;&#x914D;&#x7F6E;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># app/settings/config.py</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DefaultConfig</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&quot;&quot;&quot;</span>
+    <span class="hljs-comment"># mysql&#x914D;&#x7F6E;</span>
+    SQLALCHEMY_DATABASE_URI = <span class="hljs-string">&apos;mysql://root:mysql@127.0.0.1:3306/toutiao&apos;</span>  <span class="hljs-comment"># &#x8FDE;&#x63A5;&#x5730;&#x5740;</span>
+    SQLALCHEMY_TRACK_MODIFICATIONS = <span class="hljs-keyword">False</span>  <span class="hljs-comment"># &#x662F;&#x5426;&#x8FFD;&#x8E2A;&#x6570;&#x636E;&#x53D8;&#x5316;</span>
+    SQLALCHEMY_ECHO = <span class="hljs-keyword">False</span>  <span class="hljs-comment"># &#x662F;&#x5426;&#x6253;&#x5370;&#x5E95;&#x5C42;&#x6267;&#x884C;&#x7684;SQL</span>
+
+    <span class="hljs-comment"># redis&#x914D;&#x7F6E;</span>
+    REDIS_HOST = <span class="hljs-string">&apos;127.0.0.1&apos;</span>  <span class="hljs-comment"># ip</span>
+    REDIS_PORT = <span class="hljs-number">6381</span>  <span class="hljs-comment"># &#x7AEF;&#x53E3;</span>
+</code></pre>
+<ul>
+<li>&#x5728; <code>common</code>&#x5305;&#x4E2D;&#x521B;&#x5EFA; <code>models</code>&#x5305;, &#x5728;&#x5176;&#x521D;&#x59CB;&#x5316;&#x6587;&#x4EF6;&#x4E2D;&#x521B;&#x5EFA;SQLAlchemy&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># common/models/__init__.py</span>
+
+<span class="hljs-keyword">from</span> flask_sqlalchemy <span class="hljs-keyword">import</span> SQLAlchemy
+
+<span class="hljs-comment"># mysql&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;</span>
+db = SQLAlchemy()
+</code></pre>
+<ul>
+<li>&#x5728; <code>app</code>&#x5305;&#x7684;&#x521D;&#x59CB;&#x5316;&#x6587;&#x4EF6;&#x4E2D;:<ul>
+<li>&#x521B;&#x5EFA;Redis&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;</li>
+<li>&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x5BF9; <code>SQLAlchemy</code> &#x548C; <code>Redis</code>&#x8FDB;&#x884C;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># app/__init__.py </span>
+
+<span class="hljs-keyword">from</span> redis <span class="hljs-keyword">import</span> StrictRedis
+
+<span class="hljs-comment"># redis&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;</span>
+redis_client = <span class="hljs-keyword">None</span>  <span class="hljs-comment"># type: StrictRedis</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">register_extensions</span><span class="hljs-params">(app)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&quot;&quot;&quot;</span>
+
+    <span class="hljs-comment"># SQLAlchemy&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;</span>
+    <span class="hljs-keyword">from</span> models <span class="hljs-keyword">import</span> db
+    db.init_app(app)
+
+    <span class="hljs-comment"># redis&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;</span>
+    <span class="hljs-keyword">global</span> redis_client
+    redis_client = StrictRedis(host=app.config[<span class="hljs-string">&apos;REDIS_HOST&apos;</span>], port=app.config[<span class="hljs-string">&apos;REDIS_PORT&apos;</span>])
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_app</span><span class="hljs-params">(type)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x521B;&#x5EFA;&#x5E94;&#x7528; &#x548C; &#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&quot;&quot;&quot;</span>
+
+    ...
+
+    <span class="hljs-comment"># &#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;</span>
+    register_extensions(app)
+
+    ...
+</code></pre>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ProjectInitial.html" class="navigation navigation-prev " aria-label="Previous page: 1.1.项目初始化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ModuleSetting.html" class="navigation navigation-next " aria-label="Next page: 1.3.配置模块化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.2.配置数据库","level":"1.5.1.2","depth":3,"next":{"title":"1.3.配置模块化","level":"1.5.1.3","depth":3,"path":"C04-Project/ModuleSetting.md","ref":"C04-Project/ModuleSetting.md","articles":[]},"previous":{"title":"1.1.项目初始化","level":"1.5.1.1","depth":3,"path":"C04-Project/ProjectInitial.md","ref":"C04-Project/ProjectInitial.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","-sharing","splitter","hide-element","code","popup","emphasize","auto-scroll-table","highlight","fontsettings","anchor-navigation-ex","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"emphasize":{},"splitter":{},"search":{},"auto-scroll-table":{},"popup":{},"lunr":{"maxIndexSize":1000000},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link","#book-search-input"]},"fontsettings":{"family":"sans","size":2,"theme":"white"},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true},"expandable-chapters-small":{},"theme-default":{"showLevel":false,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}}},"github":"","theme":"default","githubHost":"","author":"zhangzz","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"黑马头条","language":"zh-hans","links":{"sidebar":{"传智播客":"http://www.itcast.cn/"}},"gitbook":"*","description":"传智播客-python学科-黑马头条"},"file":{"path":"C04-Project/DatabaseSetting.md","mtime":"2020-02-18T14:17:52.148Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2020-03-01T18:07:17.481Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+
