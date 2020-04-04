@@ -59,7 +59,7 @@ assertIsNotNone 存在，则pass
 
 ```python
 import unittest
-class TestClass(unitest.TestCase):
+class TestClass(unittest.TestCase):
     pass
 ```
 
